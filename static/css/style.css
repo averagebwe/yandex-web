@@ -1,14 +1,14 @@
-h2 {
-    margin-left: 3%;
-    padding: 3px;
+h1 {
+    text-align: center;
+    line-height: 150%;
+    font-size: 36pt;
+    text-shadow: 1px 1px 2px white, 0 0 1em salmon, 0 0 0.2em yellow;
 }
 
-ol {
-    margin-left: 5%;
-    padding: 1px;
-}
-
-ul {
-    margin-left: 5%;
-    padding: 1px;
+#coolgif {
+    display: block;
+    width: 65%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }

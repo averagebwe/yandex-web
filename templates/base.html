@@ -7,12 +7,24 @@
             rel="stylesheet" 
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
             crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css"
     <title>{{title}}</title>
 </head>
 <body>
 <header>
     <nav class="navbar">
         <a class="navbar-brand" href="#">САМЫЙ ПРОСТОЙ БЛОГ ЭВЕР</a>
+        {% if current_user.is_authenticated %}
+            <p>
+                <a class="navbar-brand" href="#">{{ current_user.name }}</a>
+                <a class="btn btn-danger " href="/logout">Выход</a>
+            </p>
+        {% else %}
+            <p>
+                <a class="btn btn-light " href="/register">Зарегистрироваться</a>
+                <a class="btn btn-secondary" href="/login">Войти</a>
+            </p>
+        {% endif %}
     </nav>
 </header>
 <!-- Begin page content -->
